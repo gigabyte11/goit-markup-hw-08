@@ -43,7 +43,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 15px 15px;
 }
@@ -199,31 +198,35 @@ img {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  width: 480px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-320.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 198px;
 }
 
 .hero-z {
   align-items: center;
-  width: 696px;
   margin: auto;
   margin-bottom: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   color: var(--text-color-hero);
   text-transform: uppercase;
 }
 
 .modal-btn {
+  border: 0px;
   background: var(--background-color-btn);
   border-radius: 4px;
   padding: 10px 32px;
@@ -235,9 +238,36 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  border-radius: 4px;
   color: var(--text-color-hero);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1200.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-z {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-z {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .section {
