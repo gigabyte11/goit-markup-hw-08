@@ -43,8 +43,15 @@ img {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 15px 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .header-container {
@@ -299,19 +306,17 @@ img {
 }
 
 .features-container {
-  display: flex;
   align-items: center;
 }
 
 .features-menu {
-  display: flex;
   align-items: center;
   margin-right: -30px;
   justify-content: center;
 }
 
 .features-menu {
-  flex-basis: calc(100%/4 - 270px);
+  width: 100%;
 }
 
 .features-list {
@@ -320,6 +325,7 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -328,13 +334,11 @@ img {
 }
 
 .features {
-  width: 270px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color-section3);
-  margin-right: 30px;
   border-radius: 4px;
 }
 
@@ -349,6 +353,7 @@ img {
 
 .hero-list-item {
   margin-right: 30px;
+  margin-bottom: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -592,11 +597,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-.list:not(:last-child) {
-  margin-bottom: 9px;
-  margin-left: 8px;
 }
 
 .join {
