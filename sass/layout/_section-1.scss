@@ -24,8 +24,6 @@
 .features-menu{
   //  flex-basis: calc(100%/4 - 270px);
     width: 100%;
-   
-    
 }
 
 .features-list {
@@ -40,6 +38,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-section);
+
+    @media screen and (min-width: 768px) {
+        text-align: left;;
+    }    
 }
 .features{
     margin-bottom: 30px;

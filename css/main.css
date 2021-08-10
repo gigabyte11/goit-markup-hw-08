@@ -352,6 +352,12 @@ img {
   color: var(--color-text-section);
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    text-align: left;
+  }
+}
+
 .features {
   margin-bottom: 30px;
   display: flex;
