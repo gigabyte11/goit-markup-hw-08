@@ -16,10 +16,16 @@
     align-items: center;
     margin-right: -30px;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .features-menu{
   //  flex-basis: calc(100%/4 - 270px);
-  width: 100%;
+    width: 100%;
+   
+    
 }
 
 .features-list {
@@ -43,6 +49,7 @@
     background-color: var(--background-color-section3);
 //    margin-right: 30px;
     border-radius: 4px;
+    
 }
 .features-list-icon{
     background-color: var(--background-color-section3);
@@ -62,4 +69,10 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--color-text-mail-tel);
+}
+.list{
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100%/2 - 60px);
+        margin-left: 30px;
+    }
 }

@@ -54,6 +54,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -315,6 +327,13 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .features-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .features-menu {
   width: 100%;
 }
@@ -360,6 +379,13 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--color-text-mail-tel);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    flex-basis: calc(100%/2 - 60px);
+    margin-left: 30px;
+  }
 }
 
 .work {
