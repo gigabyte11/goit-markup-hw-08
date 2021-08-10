@@ -256,12 +256,6 @@ img {
   }
 }
 
-@media screen and (min-width: 360px) {
-  .hero-z {
-    width: 360px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .hero-z {
     width: 360px;
