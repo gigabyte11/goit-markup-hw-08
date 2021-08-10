@@ -407,6 +407,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list {
+    flex-basis: calc(100%/4 - 120px);
+  }
+}
+
 .work {
   padding: 0;
   padding-bottom: 94px;
