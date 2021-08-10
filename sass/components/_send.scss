@@ -1,0 +1,79 @@
+.mailing{
+    display: block;
+    margin-left: 93px;
+}
+
+.mailing-label {
+    width: 570px;
+    height: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-hero);
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-send {
+    display: flex;
+}
+.input-form-send {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+    border-radius: 4px;
+    background-color: var(--background-color-footer);
+    color: var(--color-text-footer-logo-s);
+    padding-left: 15px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    align-items: center;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    &::placeholder {
+        display: flex;
+        font-family: Roboto;
+        padding: 16px 0px;
+        font-size: 16px;
+        align-items: center;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255,0.6 );
+    }
+}
+
+.button-send {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    background: var(--color-text);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--text-color-hero);
+}
+
+.send-icon {
+    margin-left: 10px;
+    fill: var(--color-text-footer-logo-s);
+}

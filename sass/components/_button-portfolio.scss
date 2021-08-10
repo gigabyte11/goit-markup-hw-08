@@ -1,0 +1,24 @@
+
+.modal-btn-portfolio{
+    height: 38px;
+    font-family: Roboto; 
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 14px; 
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--color-text-menu);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background: var(--background-color-section3);
+    transition: color 250ms, background-color 250ms;
+    
+    &:hover,
+    &:focus
+    {
+        color: var(--text-color-hero);
+        background: var(--color-text);
+    }
+}   
