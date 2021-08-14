@@ -330,6 +330,13 @@ img {
   margin: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .features-container {
   align-items: center;
 }
