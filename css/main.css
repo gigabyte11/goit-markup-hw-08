@@ -351,6 +351,12 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .features-menu {
+    width: 1200px;
+  }
+}
+
 .features-list {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -401,15 +407,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .list {
+  .list-features {
     flex-basis: calc(100%/2 - 60px);
     margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .list {
-    flex-basis: calc(100%/4 - 120px);
+  .list-features {
+    flex-basis: calc(100%/4 - 60px);
   }
 }
 

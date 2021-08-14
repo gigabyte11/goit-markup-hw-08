@@ -23,6 +23,9 @@
 .features-menu{
   //  flex-basis: calc(100%/4 - 270px);
     width: 100%;
+    @media screen and (min-width: 1200px)  {
+        width: 1200px;
+    }
 }
 
 .features-list {
@@ -48,7 +51,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--background-color-section3);
-//    margin-right: 30px;
     border-radius: 4px;
     
 }
@@ -61,7 +63,6 @@
     margin-right: 100px;
 }
 .hero-list-item {
-   // margin-right: 30px;
     margin-bottom: 30px;
     font-family: Roboto; 
     font-style: normal; 
@@ -71,13 +72,13 @@
     letter-spacing: 0.03em;
     color: var(--color-text-mail-tel);
 }
-.list{
+.list-features{
     @media screen and (min-width: 768px) {
         flex-basis: calc(100%/2 - 60px);
         margin-left: 30px;
     }
 
     @media screen and (min-width: 1200px) {
-        flex-basis: calc(100%/4 - 120px)
+        flex-basis: calc(100%/4 - 60px)
     }
 }
