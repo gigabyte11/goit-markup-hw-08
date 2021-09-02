@@ -427,8 +427,13 @@ img {
 }
 
 .work {
-  padding: 0;
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .section-work {
