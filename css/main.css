@@ -490,6 +490,21 @@ img {
   padding-bottom: 94px;
 }
 
+.section-work_ {
+  width: 100%;
+  height: 33px;
+  left: 138px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(----color-text-section);
+  margin-bottom: 30px;
+}
+
 .team-work {
   margin-top: -30px;
 }
