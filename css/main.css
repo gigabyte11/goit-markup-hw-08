@@ -1036,10 +1036,22 @@ img {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  /* width: 1200px;
-    right: 252px;*/
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo-footer {
@@ -1089,10 +1101,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-.join {
-  margin-left: 70px;
 }
 
 .join-title {
