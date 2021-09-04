@@ -1,12 +1,10 @@
 .section3
 {
     background: var(--background-color-section3);
-    padding-bottom: 94px;
 }
 
 .section-work_{
     width: 100%;
-    height: 33px;
     left: 138px;
 
     font-family: Roboto;
@@ -19,15 +17,15 @@
     color: var(----color-text-section);
     margin-bottom: 30px;
 
-    @media screen and (max-width: 480px) {
-    //margin-top: 60px;
-    //margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
     }
 }
 .team-work
 {
     //display: flex;
-    margin-top: -30px;
+    margin-top: 30px;
         
     @media screen and (min-width: 768px) {
         display: flex;
@@ -66,7 +64,7 @@
     font-style: normal; 
     font-weight: 500; 
     font-size: 16px; 
-    line-height: 1.19;
+    line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--color-text-section);
@@ -77,7 +75,7 @@
     font-style: normal; 
     font-weight: normal; 
     font-size: 16px; 
-    line-height: 1.19;
+    line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--color-sections-text);
