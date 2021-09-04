@@ -13,11 +13,7 @@
     display: flex;
     align-items: center;
 }
-.menu
-{
-    display: flex;
-    align-items: center;
-}
+
 .logo
 {
     margin-right: 93px;
@@ -43,105 +39,150 @@
     color: var(--color-text-logo);
 }
 /*Стилізація блокім меню: Студія,Потфоліо...*/
+.menu{
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+}
 .list__menu:not(:last-child){
-    margin-right: 50px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-right: 50px;
+    }
 }
 
 .menu__link{
-    position: relative;
-    font-family: Roboto; 
-    font-style: normal; 
-    font-weight: 500; 
-    font-size: 14px; 
-    line-height: 1.14; 
-    letter-spacing: 0.02em;
-    color: var(--color-text-section);
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom:32px;
-    transition: color 250ms linear;
+    display: none;
 
-    &.current{
-        color: var(--color-text);
-    }
-    &.current::after{/*підкреслення активної сторінки*/
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        left: 0;
-        bottom: 0;
-        top: 76px;
+    @media screen and (min-width: 1200px) {
         display: block;
-        background: var(--background-color-modal-btn-potfolio);
-        border-radius: 2px;
-    }
-    &:hover,
-    &:focus{
-        color: var(--color-text);
+        position: relative;
+        font-family: Roboto; 
+        font-style: normal; 
+        font-weight: 500; 
+        font-size: 14px; 
+        line-height: 1.14; 
+        letter-spacing: 0.02em;
+        color: var(--color-text-section);
+        text-decoration: none;
+        padding-top: 32px;
+        padding-bottom:32px;
+        transition: color 250ms linear;
+
+            &.current{
+            color: var(--color-text);
+            }
+        
+            &.current::after{/*підкреслення активної сторінки*/
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            top: 76px;
+            display: block;
+            background: var(--background-color-modal-btn-potfolio);
+            border-radius: 2px;
+            }
+            
+            &:hover,
+            &:focus{
+            color: var(--color-text);
+        }
     }
 }
 
 /*Стилізація блоків меню: tел, Mайл*/
-.adress
-{
-    display: flex;
-    align-items: center;
-}
-.list__adress
-{
-    list-style: none; /*прибирає точки в списку*/
-    margin-right: auto;
-    transition: color 250ms linear;
-}
-.mail__link{
-    display: flex;
-    align-items: center;
-    margin-left: 305px;
-    
-    font-family: Roboto; 
-    font-style: normal; 
-    font-weight: 500; 
-    font-size: 14px; 
-    line-height: 1.14; 
-    letter-spacing: 0.02em;
-    color: var(--color-text-mail-tel);
-    text-decoration: none;
-    transition: color 250ms linear;
+.adress{
+    display: none;
 
-    &:hover,
-    &:focus{
-        color: var(--color-text);
+    @media screen and (min-width: 1200px) {
+        display: block;
+        display: flex;
+        align-items: center;
     }
 }
-.tel__link{   
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    
-    font-family: Roboto; 
-    font-style: normal; 
-    font-weight: 500; 
-    font-size: 14px; 
-    line-height: 1.14; 
-    letter-spacing: 0.02em;
-    color: var(--color-text-mail-tel);
-    text-decoration: none;
-    transition: color 250ms linear;
+.list__adress{
+    display: none;
 
-    &:hover,
-    &:focus{
-        color: var(--color-text);
+    @media screen and (min-width: 1200px) {
+        display: block;
+        list-style: none; /*прибирає точки в списку*/
+        margin-right: auto;
+        transition: color 250ms linear;
+    }
+}
+.mail__link{
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-left: 305px;
+    
+        font-family: Roboto; 
+        font-style: normal; 
+        font-weight: 500; 
+        font-size: 14px; 
+        line-height: 1.14; 
+        letter-spacing: 0.02em;
+        color: var(--color-text-mail-tel);
+        text-decoration: none;
+        transition: color 250ms linear;
+
+            &:hover,
+            &
+            :focus{
+            color: var(--color-text);
+            }
+    }
+}
+.tel__link{
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;   
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    
+        font-family: Roboto; 
+        font-style: normal; 
+        font-weight: 500; 
+        font-size: 14px; 
+        line-height: 1.14; 
+        letter-spacing: 0.02em;
+        color: var(--color-text-mail-tel);
+        text-decoration: none;
+        transition: color 250ms linear;
+
+            &:hover,
+            &:focus{
+                color: var(--color-text);
+            }
     }
 }
 
 .header__icon-list-adress{
-    margin-right: 10px;
-    fill: currentColor;
-    transition: color 250ms linear;
+    display: none;
 
-    &:hover,
-    &:focus{
-        color:currentColor var(--color-text);
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-right: 10px;
+        fill: currentColor;
+        transition: color 250ms linear;
+
+            &:hover,
+            &:focus{
+                color:currentColor var(--color-text);
+            }
     }
 }
