@@ -246,6 +246,10 @@
         // justify-content: space-between;
         min-height: 450px;
     }
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .mob-pos{
