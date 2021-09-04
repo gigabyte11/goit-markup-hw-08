@@ -10,8 +10,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--text-color-hero);
     transform: translate(-50%,-50%);
     border-radius: 4px;
@@ -20,6 +20,10 @@
 0px 1px 1px rgba(0, 0, 0, 0.14), 
 0px 2px 1px rgba(0, 0, 0, 0.20);
     padding:40px;
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 /*****Опис стилю кнопки Close****/
 .close-btn{
