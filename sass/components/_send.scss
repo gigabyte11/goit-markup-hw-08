@@ -1,9 +1,9 @@
 .mailing{
     display: block;
     margin-top: 60px;
-    @media screen and (min-width: 1200px) {
-        display: block;
-        margin-left: 93px;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-top: 0;
     }
 }
 
@@ -21,6 +21,7 @@
 }
 .message {
     //display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
@@ -30,6 +31,11 @@
     width: 100%;
     margin-bottom: 20px;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .input-form-send {
     //width: 358px;
@@ -62,10 +68,11 @@
 }
 
 .button-send {
+
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-   // display: flex;
+    display: flex;
     width: 200px;
     height: 50px;
     border: 0;
@@ -87,6 +94,10 @@
 }
 
 .send-icon {
+    width: 24px;
     margin-left: 10px;
     fill: var(--color-text-footer-logo-s);
+    @media screen and (max-width: 1199px) {
+        margin-left: 10px;
+    }
 }
