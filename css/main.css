@@ -279,7 +279,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .adress {
-    display: block;
     display: flex;
     align-items: center;
   }
@@ -290,6 +289,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .list__adress {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /*прибирає точки в списку*/
+    margin-right: auto;
+    transition: color 250ms linear;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .list__adress {
     display: block;
     list-style: none;
@@ -305,8 +315,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .mail__link {
-    display: block;
-    width: 100%;
     display: flex;
     align-items: center;
     margin-left: 84px;
@@ -353,7 +361,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .tel__link {
-    display: block;
     display: flex;
     align-items: center;
     margin-left: 84px;

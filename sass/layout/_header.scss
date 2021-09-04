@@ -189,7 +189,6 @@
         align-items: center;
     }
     @media screen and (min-width: 1200px) {
-            display: block;
             display: flex;
             align-items: center;
     }
@@ -198,6 +197,14 @@
     display: none;
 
     @media screen and (min-width: 768px) {
+        //display: block;
+        display: flex;
+        flex-direction: column;
+        list-style: none; /*прибирає точки в списку*/
+        margin-right: auto;
+        transition: color 250ms linear;
+    }
+    @media screen and (min-width: 1200px) {
         display: block;
       //  display: flex;
         list-style: none; /*прибирає точки в списку*/
@@ -209,8 +216,6 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;
-        width: 100%;
         display: flex;
         align-items: center;
         margin-left: 84px;
@@ -257,7 +262,6 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;
         display: flex;
         align-items: center;
         margin-left: 84px;
