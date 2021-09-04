@@ -206,6 +206,7 @@
     }
     @media screen and (min-width: 1200px) {
         display: block;
+        flex-direction: row;
       //  display: flex;
         list-style: none; /*прибирає точки в списку*/
         margin-right: auto;
@@ -239,6 +240,7 @@
     }
     @media screen and (min-width: 1200px) {
         display: flex;
+        flex-direction: row;
         align-items: center;
         margin-left: 305px;
     

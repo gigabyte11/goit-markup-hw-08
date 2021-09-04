@@ -302,6 +302,7 @@ img {
 @media screen and (min-width: 1200px) {
   .list__adress {
     display: block;
+    flex-direction: row;
     list-style: none;
     /*прибирає точки в списку*/
     margin-right: auto;
@@ -338,6 +339,7 @@ img {
 @media screen and (min-width: 1200px) {
   .mail__link {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: 305px;
     font-family: Roboto;
@@ -1384,42 +1386,67 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--color-sections-text);
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .modal-form-checkbox-label::before {
   display: block;
   content: " ";
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 1px solid var(--color-text-section);
   cursor: pointer;
-  margin-right: 9px;
+  margin-right: 8px;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label::before {
+    margin-right: 9px;
+    margin-bottom: 0px;
+  }
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
   border-radius: 2px;
   border-color: var(--background-color-modal-btn-potfolio);
   background-image: url(../images/check.jpg);
+  width: 16px;
+  height: 15px;
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: 1px solid var(--background-color-modal-btn-potfolio);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 .modal-form-label-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--color-text);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-label-link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 /* BUTTON*/

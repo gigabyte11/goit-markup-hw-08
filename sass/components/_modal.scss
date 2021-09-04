@@ -152,30 +152,45 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--color-sections-text);
     margin-bottom: 30px;
+    margin-top: 20px;
+    
 
     &::before{
         display: block;
         content: " ";
         width: 16px;
-        height: 16px;
+        height: 15px;
         border: 1px solid var(--color-text-section);
         cursor: pointer;
-        margin-right: 9px;
+        margin-right: 8px;
+        margin-bottom: 14px;
+        
+        @media screen and (min-width: 1200px) {
+            margin-right: 9px;
+            margin-bottom: 0px;
+        }
     }
 
     .modal-form-checkbox:checked + &::before {
         border-radius: 2px;
         border-color: var(--background-color-modal-btn-potfolio);
         background-image: url(../images/check.jpg);
+        width: 16px;
+        height: 15px;
     }
 
     .modal-form-checkbox:focus + &::before {
         outline: 1px solid var(--background-color-modal-btn-potfolio);    
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
@@ -183,11 +198,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--color-text);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;;
+    }
 }
 
 /* BUTTON*/
