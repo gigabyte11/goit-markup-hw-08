@@ -57,6 +57,8 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
+    margin-left: auto;
+    margin-left: auto;
   }
 }
 
@@ -707,8 +709,30 @@ img {
   }
 }
 
+.list-features {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-section3);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-list-icon {
+  background-color: var(--background-color-section3);
+  border-radius: 0px 4px 4px 0px 0.25;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .features-list {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
@@ -727,26 +751,7 @@ img {
   }
 }
 
-.features {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-color-section3);
-  border-radius: 4px;
-}
-
-.features-list-icon {
-  background-color: var(--background-color-section3);
-  border-radius: 0px 4px 4px 0px 0.25;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .hero-list-item {
-  margin-bottom: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -754,6 +759,14 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--color-text-mail-tel);
+}
+
+.hero-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.list-features:last-child {
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -951,10 +964,6 @@ img {
   transition: fill 250ms linear;
 }
 
-.section4 {
-  padding-bottom: 94px;
-}
-
 .client {
   margin-top: 30px;
 }
@@ -1104,11 +1113,14 @@ img {
 }
 
 .join-title {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
   font-family: Roboto;
   margin-bottom: 20px;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-hero);
@@ -1116,9 +1128,11 @@ img {
 
 .join-list {
   display: flex;
-  justify-self: center;
+  justify-content: space-between;
+  max-width: 206px;
   margin-top: 16px;
-  margin-left: -10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .join-item {
@@ -1142,12 +1156,19 @@ img {
 
 .mailing {
   display: block;
-  margin-left: 93px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: block;
+    margin-left: 93px;
+  }
 }
 
 .mailing-label {
-  width: 570px;
-  height: 36px;
+  width: 100%;
+  height: 16px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1159,18 +1180,20 @@ img {
 }
 
 .message {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
 .form-send {
-  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .input-form-send {
-  width: 358px;
   height: 50px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1197,7 +1220,9 @@ img {
 }
 
 .button-send {
-  display: flex;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   border: 0;
@@ -1207,6 +1232,7 @@ img {
   margin-left: 12px;
   padding: 10px 28px;
   align-items: center;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
