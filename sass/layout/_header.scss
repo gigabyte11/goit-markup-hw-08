@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     @media screen and (min-width: 768px) {
-        margin-top: -30px;
+        margin-top: -17px;
     }
     @media screen and (min-width: 1200px) {
         margin-top: -17px;
@@ -148,8 +148,13 @@
 
     @media screen and (min-width: 768px) {
         display: block;
-        display: flex;
+      //  display: flex;
         align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+            display: block;
+            display: flex;
+            align-items: center;
     }
 }
 .list__adress{
@@ -160,19 +165,19 @@
         list-style: none; /*прибирає точки в списку*/
         margin-right: auto;
         transition: color 250ms linear;
-        flex-basis: calc(100%/2 - 60px);
-        margin-left: 30px;
     }
 }
 .mail__link{
     display: none;
 
     @media screen and (min-width: 768px) {
-        //display: block;
+        display: block;
         width: 100%;
         display: flex;
         align-items: center;
-        margin-left: 88px;
+        margin-left: 84px;
+        padding-right: 15px;
+        margin-bottom: 10px;
     
         font-family: Roboto; 
         font-style: normal; 
@@ -191,10 +196,10 @@
             }
     }
     @media screen and (min-width: 1200px) {
-        //display: block;
+        display: block;
         display: flex;
         align-items: center;
-        margin-left: 84px;
+        margin-left: 305px;
     
         font-family: Roboto; 
         font-style: normal; 
@@ -218,10 +223,11 @@
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;   
+        display: block;
         display: flex;
         align-items: center;
-        margin-left: 30px;
+        margin-left: 84px;
+        padding-right: 15px;
     
         font-family: Roboto; 
         font-style: normal; 
@@ -242,7 +248,7 @@
         display: block;   
         display: flex;
         align-items: center;
-        margin-left: 30px;
+        margin-left: 50px;
     
         font-family: Roboto; 
         font-style: normal; 
