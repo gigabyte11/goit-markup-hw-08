@@ -22,53 +22,55 @@
                     <span class="logo__web">Web</span><span class="logo__s">Studio</span>
                 </a>
                 <!--Кнока виклику меню в мобільній версії сайту-->
-                <button class="menu-open">
+                <button class="menu-open" data-menu-open>
                     <svg class="menu-open__icon-menu-open" width="40" height="40">
                     <use href="./images/sprite.svg#menu-open"></use></svg>
                 </button>
 
                 <!--Модальне вікно в мобільній версії сайту-->
-                <div class="mob-menu">
+                <div class="mob-menu" data-menu>
                     <div class="container">
-                    <button class="menu-close">
+                    <button class="menu-close" data-menu-close>
                         <svg class="menu-close_icon" width="40" height="40">
                             <use href="./images/sprite.svg#menu-close"></use></svg>
                     </button>
                     <ul class="mob-menu-list list">
                         <li class="mob-menu-list__item">
-                            <a href="" class="mob-menu-list__link">Студия</a>
+                            <a href="" class="mob-menu-list__link current">Студия</a>
                         </li>
                         <li class="mob-menu-list__item">
-                            <a href="" class="mob-menu-list__link">Студия</a>
+                            <a href="" class="mob-menu-list__link">Портфолио</a>
                         </li>
                         <li class="mob-menu-list__item">
-                            <a href="" class="mob-menu-list__link">Студия</a>
+                            <a href="" class="mob-menu-list__link">Контакты</a>
                         </li>
                     </ul>
             <!--Список контактів-->
+                    <div class="mob-pos">
                     <ul class="mob-menu-contacts">
                         <li class="mob-menu-contacts__item">
-                            <a href="" class="mob-menu-contacts__linkt">Студия</a>
+                            <a href="" class="mob-menu-contacts__linkt">+38 096 111 11 11</a>
                         </li>
                         <li class="mob-menu-contacts__item">
-                            <a href="" class="mob-menu-contacts__linke">Студия</a>
+                            <a href="" class="mob-menu-contacts__linke">info@devstudio.com</a>
                         </li>
                     </ul>
             <!--Список соц.мереж-->
                     <ul class="mob-menu-soc">
                         <li class="mob-menu-soc__item">
-                            <a href="" class="mob-menu-soc__link">Студия</a>
+                            <a href="" class="mob-menu-soc__link">Instagram</a>
                         </li>
                         <li class="mob-menu-soc__item">
-                                <a href="" class="mob-menu-soc__link">Студия</a>
+                                <a href="" class="mob-menu-soc__link">Twitter</a>
                         </li>
                         <li class="mob-menu-soc__item">
-                            <a href="" class="mob-menu-soc__link">Студия</a>
+                            <a href="" class="mob-menu-soc__link">Facebook</a>
                         </li>
                         <li class="mob-menu-soc__item">
-                            <a href="" class="mob-menu-soc__link">Студия</a>
+                            <a href="" class="mob-menu-soc__link">LinkedIn</a>
                         </li>
                     </ul>
+                    </div>
                     </div>
                 </div>
                         <!--Секція навігації Menu-->
@@ -573,6 +575,7 @@
         </div>
     </div>-->
     <!--Секція JS-->
-<!--    <script src="./js/modal.js"></script>-->
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

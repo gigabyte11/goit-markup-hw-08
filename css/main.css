@@ -335,6 +335,13 @@ img {
 
 .mob-menu .container {
   position: relative;
+  height: 100%;
+  min-height: 450px;
+}
+
+.mob-pos {
+  position: absolute;
+  bottom: 0;
 }
 
 .menu-close {
@@ -357,6 +364,14 @@ img {
   letter-spacing: 00.02em;
   color: var(--color-text-section);
   text-decoration: none;
+}
+
+.mob-menu-list__link.current {
+  color: var(--color-text);
+}
+
+.mob-menu-contacts {
+  margin-bottom: 64px;
 }
 
 .mob-menu-contacts__item:not(:last-child) {
@@ -385,7 +400,7 @@ img {
   text-decoration: none;
 }
 
-.mob-menu-soc__item {
+.mob-menu-soc {
   display: flex;
 }
 
