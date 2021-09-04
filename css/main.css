@@ -534,7 +534,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team-list {
-    flex-basis: calc(100%/4 - 60px);
+    flex-basis: calc(100%/4 - 30px);
   }
 }
 
