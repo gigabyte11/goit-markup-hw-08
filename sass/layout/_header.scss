@@ -23,6 +23,14 @@
 {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        margin-top: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: -17px;
+    }
+
+
 }
 
 .logo
@@ -51,7 +59,7 @@
 .menu-open{
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px;
     padding: 0;
     margin: 0;
     border: none;
@@ -76,7 +84,7 @@
 .menu{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         display: flex;
         align-items: center;
@@ -85,7 +93,7 @@
 .list__menu:not(:last-child){
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         margin-right: 50px;
     }
@@ -94,7 +102,7 @@
 .menu__link{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         position: relative;
         font-family: Roboto; 
@@ -137,7 +145,7 @@
 .adress{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         display: flex;
         align-items: center;
@@ -146,7 +154,7 @@
 .list__adress{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         list-style: none; /*прибирає точки в списку*/
         margin-right: auto;
@@ -156,7 +164,7 @@
 .mail__link{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         display: flex;
         align-items: center;
@@ -182,7 +190,7 @@
 .tel__link{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;   
         display: flex;
         align-items: center;
@@ -208,7 +216,7 @@
 .header__icon-list-adress{
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: block;
         margin-right: 10px;
         fill: currentColor;
@@ -219,4 +227,80 @@
                 color:currentColor var(--color-text);
             }
     }
+}
+
+.mob-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--text-color-hero);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    .container{
+        position: relative;
+    }
+}
+.menu-close{
+position: absolute;
+right: 10px;
+top: -41px;
+}
+
+.mob-menu-list__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-menu-list__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 00.02em;
+    color: var(--color-text-section);
+    text-decoration: none;
+}
+
+.mob-menu-contacts__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-menu-contacts__linkt{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 00.02em;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.mob-menu-contacts__linke{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 00.02em;
+    color: var(--color-text-mail-tel);
+    text-decoration: none;
+}
+
+.mob-menu-soc__item{
+    display: flex;
+}
+
+.mob-menu-soc__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 00.02em;
+    color: var(--color-text);
+    text-decoration: none;
 }
