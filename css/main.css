@@ -252,6 +252,8 @@ img {
     /*прибирає точки в списку*/
     margin-right: auto;
     transition: color 250ms linear;
+    flex-basis: calc(100%/2 - 60px);
+    margin-left: 30px;
   }
 }
 
@@ -261,10 +263,31 @@ img {
 
 @media screen and (min-width: 768px) {
   .mail__link {
-    display: block;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 305px;
+    margin-left: 88px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--color-text-mail-tel);
+    text-decoration: none;
+    transition: color 250ms linear;
+  }
+  .mail__link:hover,
+  .mail__link :focus {
+    color: var(--color-text);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail__link {
+    display: flex;
+    align-items: center;
+    margin-left: 84px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -294,6 +317,27 @@ img {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--color-text-mail-tel);
+    text-decoration: none;
+    transition: color 250ms linear;
+  }
+  .tel__link:hover, .tel__link:focus {
+    color: var(--color-text);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tel__link {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -306,18 +350,62 @@ img {
   }
 }
 
-.header__icon-list-adress {
+.header__icon-list-adress_m {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header__icon-list-adress {
+  .header__icon-list-adress_m {
+    width: 14px;
+    height: 10px;
     display: block;
     margin-right: 10px;
     fill: currentColor;
     transition: color 250ms linear;
   }
-  .header__icon-list-adress:hover, .header__icon-list-adress:focus {
+  .header__icon-list-adress_m:hover, .header__icon-list-adress_m:focus {
+    color: currentColor var(--color-text);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__icon-list-adress_m {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: color 250ms linear;
+  }
+  .header__icon-list-adress_m:hover, .header__icon-list-adress_m:focus {
+    color: currentColor var(--color-text);
+  }
+}
+
+.header__icon-list-adress_t {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__icon-list-adress_t {
+    width: 10px;
+    height: 14px;
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: color 250ms linear;
+  }
+  .header__icon-list-adress_t:hover, .header__icon-list-adress_t:focus {
+    color: currentColor var(--color-text);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__icon-list-adress_t {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: color 250ms linear;
+  }
+  .header__icon-list-adress_t:hover, .header__icon-list-adress_t:focus {
     color: currentColor var(--color-text);
   }
 }
