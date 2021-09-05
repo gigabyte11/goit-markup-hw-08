@@ -308,7 +308,6 @@ img {
 @media screen and (min-width: 1200px) {
   .list__adress {
     display: block;
-    flex-direction: row;
     list-style: none;
     /*прибирає точки в списку*/
     margin-right: auto;
@@ -682,7 +681,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -789,6 +788,7 @@ img {
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -843,6 +843,12 @@ img {
 
 .section3 {
   background: var(--background-color-section3);
+}
+
+@media screen and (min-width: 1200px) {
+  .section3 {
+    padding-bottom: 94px;
+  }
 }
 
 .section-work_ {
@@ -960,6 +966,10 @@ img {
   transition: fill 250ms linear;
 }
 
+.section4 {
+  padding-bottom: 94px;
+}
+
 .client {
   margin-top: 30px;
 }
@@ -978,7 +988,13 @@ img {
     flex-wrap: wrap;
     align-items: center;
     margin-left: -30px;
-    margin-top: 30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
   }
 }
 
@@ -1002,10 +1018,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .client-item {
-    width: 170px;
-    height: 92px;
-    flex-basis: calc((100% - 180px) / 6);
-    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -1064,6 +1077,14 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
+  .adres-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .adres-footer {
     display: flex;
     flex-direction: column;

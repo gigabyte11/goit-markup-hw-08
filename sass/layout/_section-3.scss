@@ -1,6 +1,9 @@
 .section3
 {
     background: var(--background-color-section3);
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
 }
 
 .section-work_{
