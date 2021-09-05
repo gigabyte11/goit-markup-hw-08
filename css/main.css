@@ -1560,6 +1560,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    max-width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 94px;
+  }
+}
+
 .modal-btn-portfolio {
   font-family: Roboto;
   font-style: normal;
@@ -1692,10 +1700,6 @@ img {
   }
 }
 
-.portfolio-content .portfolio-list-content {
-  flex-basis: calc(100%/3 - 90px);
-}
-
 @media screen and (min-width: 480px) {
   .portfolio-list-content {
     margin-bottom: 30px;
@@ -1709,6 +1713,14 @@ img {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-content {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
