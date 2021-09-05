@@ -9,6 +9,7 @@
     @media screen and (min-width: 1200px) {
         width: 570px;
         margin-left: auto;
+        text-align: left;
     }
 }
 
@@ -23,6 +24,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color-hero);
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+    
 }
 .message {
     //display: flex;

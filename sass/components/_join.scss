@@ -2,6 +2,7 @@
     @media screen and (min-width: 1200px) {
         align-items: baseline;
         margin-left: 70px;
+        text-align: left;
     }
 }
 .join-title{
@@ -15,6 +16,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color-hero);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 .join-list{
     display: flex;
@@ -26,6 +31,9 @@
 }
 .join-item{
     margin-left: 10px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+    }
 }
 .join-link{
     display: flex;

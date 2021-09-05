@@ -1170,6 +1170,7 @@ img {
   .join {
     align-items: baseline;
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -1186,6 +1187,12 @@ img {
   color: var(--text-color-hero);
 }
 
+@media screen and (min-width: 1200px) {
+  .join-title {
+    text-align: left;
+  }
+}
+
 .join-list {
   display: flex;
   justify-content: space-between;
@@ -1197,6 +1204,12 @@ img {
 
 .join-item {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-item {
+    margin-left: 0px;
+  }
 }
 
 .join-link {
@@ -1230,6 +1243,7 @@ img {
   .mailing {
     width: 570px;
     margin-left: auto;
+    text-align: left;
   }
 }
 
@@ -1244,6 +1258,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-hero);
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-label {
+    text-align: start;
+  }
 }
 
 .message {
