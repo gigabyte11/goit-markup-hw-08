@@ -5,6 +5,11 @@
         width: 450px;
         margin-top: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin-left: auto;
+    }
 }
 
 .mailing-label {
@@ -35,6 +40,11 @@
     @media screen and (max-width: 1199px) {
         flex-direction: column;
         align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        display: flex;
     }
 }
 .input-form-send {
@@ -91,6 +101,9 @@
     line-height: 30px;
     letter-spacing: 0.06em;
     color: var(--text-color-hero);
+    @media screen and (min-width: 1200px) {
+        
+    }margin-top: 0;
 }
 
 .send-icon {

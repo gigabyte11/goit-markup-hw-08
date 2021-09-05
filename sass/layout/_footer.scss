@@ -44,7 +44,12 @@
     color: var(--color-text);
     text-decoration: none;
     text-shadow: 0 4 4 rgba(0,0,0,0.25);
-    text-decoration: none; /*прибирає підкреслення*/ 
+    text-decoration: none; /*прибирає підкреслення*/
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        display: inline-block;
+    } 
 }
 .logo-footer-web
 {
@@ -60,18 +65,31 @@
     padding-top:  20px;
     padding-bottom: 60px;
     @media screen and (min-width: 1200px) {
-        
+      //  margin-bottom: 9px;
+      margin-right: auto;
     }
+}
+.list_af{
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    margin-right: auto; 
+    text-align: start;  
+    }
+
 }
 .footer-adres-1{
     font-family: Roboto; 
     font-style: normal; 
     font-weight: normal; 
     font-size: 14px; 
-    line-height: 1.71;
+    line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color-hero);
     text-decoration: none;
+    @media screen and (min-width: 1200px) {
+        //  margin-bottom: 9px;
+        margin-right: auto;
+    }
 }
 .footer-adres-2{
     font-family: Roboto; 
@@ -81,5 +99,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;  
+    text-decoration: none; 
+    @media screen and (min-width: 1200px) {
+        //  margin-bottom: 9px;
+        margin-right: auto; 
+    }
 }

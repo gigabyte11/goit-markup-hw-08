@@ -1098,6 +1098,13 @@ img {
   /*прибирає підкреслення*/
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
 .logo-footer-web {
   color: var(--color-text);
 }
@@ -1111,15 +1118,35 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .adress-list {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list_af {
+    margin-bottom: 9px;
+    margin-right: auto;
+    text-align: start;
+  }
+}
+
 .footer-adres-1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color-hero);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adres-1 {
+    margin-right: auto;
+  }
 }
 
 .footer-adres-2 {
@@ -1131,6 +1158,19 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adres-2 {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    align-items: baseline;
+    margin-left: 70px;
+  }
 }
 
 .join-title {
@@ -1186,6 +1226,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing {
+    width: 570px;
+    margin-left: auto;
+  }
+}
+
 .mailing-label {
   width: 100%;
   height: 16px;
@@ -1216,6 +1263,13 @@ img {
   .form-send {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-send {
+    width: 100%;
+    display: flex;
   }
 }
 
@@ -1269,6 +1323,7 @@ img {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: var(--text-color-hero);
+  margin-top: 0;
 }
 
 .send-icon {
