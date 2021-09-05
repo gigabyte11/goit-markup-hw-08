@@ -1330,6 +1330,7 @@ img {
 @media screen and (min-width: 1200px) {
   .button-send {
     margin-top: 0;
+    margin-left: 12px;
   }
 }
 
