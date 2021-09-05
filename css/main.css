@@ -61,8 +61,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-left: auto;
   }
 }
 
@@ -1546,13 +1544,19 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-section {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-section {
-    max-width: 480px;
-    margin-left: auto;
-    margin-left: auto;
+    max-width: 768px;
   }
 }
 
@@ -1585,6 +1589,14 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .porfolio-menu {
+    justify-content: center;
+    /*робить контент по центру*/
+    margin-bottom: 30px;
+  }
+}
+
 .list-portfolio-menu {
   margin-left: 8px;
 }
@@ -1595,9 +1607,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .list-portfolio-menu {
-    max-width: 768px;
-    margin-left: auto;
-    margin-left: auto;
+    margin-left: 8px;
   }
 }
 
@@ -1626,6 +1636,13 @@ img {
 .portfolio-link {
   text-decoration: none;
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .portfolio-list-item {
@@ -1657,15 +1674,41 @@ img {
   /*прибирає точки в списку*/
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .portfolio-content .portfolio-list-content {
   flex-basis: calc(100%/3 - 90px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .portfolio-list-content {
     margin-bottom: 30px;
     display: flex;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-list-content {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
