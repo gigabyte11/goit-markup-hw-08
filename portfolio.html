@@ -19,6 +19,57 @@
                 <a class="logo" href="./">
                     <span class="logo__web">Web</span><span class="logo__s">Studio</span>
                 </a>
+                <!--Кнока виклику меню в мобільній версії сайту-->
+                <button class="menu-open" data-menu-open>
+                    <svg class="menu-open__icon-menu-open" width="40" height="40">
+                    <use href="./images/sprite.svg#menu-open"></use></svg>
+                </button>
+                <!--Модальне вікно в мобільній версії сайту-->
+                <div class="mob-menu is-hidden" data-menu>
+                    <div class="container">
+                    <button class="menu-close" data-menu-close>
+                        <svg class="menu-close_icon" width="40" height="40">
+                            <use href="./images/sprite.svg#menu-close"></use></svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link current">Студия</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                            <a href="" class="mob-menu-list__link">Контакты</a>
+                        </li>
+                    </ul>
+            <!--Список контактів-->
+                    <div class="mob-pos">
+                    <ul class="mob-menu-contacts">
+                        <li class="mob-menu-contacts__item">
+                            <a href="" class="mob-menu-contacts__linkt">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-contacts__item">
+                            <a href="" class="mob-menu-contacts__linke">info@devstudio.com</a>
+                        </li>
+                    </ul>
+            <!--Список соц.мереж-->
+                    <ul class="mob-menu-soc">
+                        <li class="mob-menu-soc__item">
+                            <a href="" class="mob-menu-soc__link">Instagram</a>
+                        </li>
+                        <li class="mob-menu-soc__item">
+                                <a href="" class="mob-menu-soc__link">Twitter</a>
+                        </li>
+                        <li class="mob-menu-soc__item">
+                            <a href="" class="mob-menu-soc__link">Facebook</a>
+                        </li>
+                        <li class="mob-menu-soc__item">
+                            <a href="" class="mob-menu-soc__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                    </div>
+                    </div>
+                </div>
                         <!--Секція навігації Menu-->
                 <ul class="menu">
                     <li class="list__menu">
@@ -63,10 +114,10 @@
                     <button class="modal-btn-portfolio" type="button">Приложения</button>
                 </li>
                 <li class="list-portfolio-menu">
-                    <button class="modal-btn-portfolio" type="button">Дизайн</button>
+                    <button class="modal-btn-portfolio" type="button">Маркетинг</button>
                 </li>
                 <li class="list-portfolio-menu">
-                    <button class="modal-btn-portfolio" type="button">Маркетинг</button>
+                    <button class="modal-btn-portfolio" type="button">Дизайн</button>
                 </li>
             </ul>
     
@@ -75,7 +126,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/texno-kryak.jpg" alt="Технокряк"  width="370" height="294">
+                    <img
+                    srcset="./images/texno-kryak-1x.jpg 1x, ./images/texno-kryak-1@2x.jpg 2x" 
+                    src="./images/texno-kryak.jpg"  alt="Технокряк">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -88,7 +141,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/design.jpg" alt="Постер New Orlean vs Golden Star"  width="370" height="294">
+                    <img
+                    srcset="./images/design-1x.jpg 1x, ./images/design-1@2x.jpg 2x" 
+                    src="./images/design.jpg"  alt="Постер New Orlean vs Golden Star">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -101,7 +156,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/restoran.jpg" alt="Ресторан Seafood"  width="370" height="294">
+                    <img
+                    srcset="./images/restoran-1x.jpg 1x, ./images/restoran-1@2x.jpg 2x" 
+                    src="./images/restoran.jpg"  alt="Ресторан Seafood">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -114,7 +171,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/prime.jpg" alt="Проект Prime"  width="370" height="294">
+                    <img
+                    srcset="./images/prime-1x.jpg 1x, ./images/prime-1@2x.jpg 2x" 
+                    src="./images/prime.jpg"  alt="Проект Prime">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -127,7 +186,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/boxes.jpg" alt="Проект Boxes"  width="370" height="294">
+                <img
+                    srcset="./images/boxes-1x.jpg 1x, ./images/boxes-1@2x.jpg 2x" 
+                    src="./images/boxes.jpg"  alt="Проект Boxes">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -140,7 +201,9 @@
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
                 <div class="portfolio-overlay">
-                    <img src="./images/borders.jpg" alt="Inspiration has no Borders"  width="370" height="294">
+                    <img
+                    srcset="./images/borders-1x.jpg 1x, ./images/borders-1@2x.jpg 2x" 
+                    src="./images/borders.jpg"  alt="Inspiration has no Borders">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -152,8 +215,10 @@
         </li>
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
-                <div class="portfolio-overlay">
-                    <img src="./images/limited-edition.jpg" alt="Издание Limited Editions"  width="370" height="294">
+                <div class="portfolio-overlay">                    
+                    <img
+                    srcset="./images/limited-edition-1x.jpg 1x, ./images/limited-edition-1@2x.jpg 2x" 
+                    src="./images/limited-edition.jpg"  alt="Издание Limited Editions">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -165,8 +230,10 @@
         </li>
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
-                <div class="portfolio-overlay">
-                    <img src="./images/lab.jpg" alt="Проект LAB"  width="370" height="294">
+                <div class="portfolio-overlay">                                        
+                    <img
+                    srcset="./images/lab-1x.jpg 1x, ./images/lab-1@2x.jpg 2x" 
+                    src="./images/lab.jpg"  alt="Проект LAB">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
@@ -178,8 +245,10 @@
         </li>
         <li class="portfolio-list-content">
             <a class="portfolio-link" href="">
-                <div class="portfolio-overlay">
-                    <img src="./images/business.jpg" alt="Growing Business"  width="370" height="294">
+                <div class="portfolio-overlay">                                                            
+                    <img
+                    srcset="./images/business-1x.jpg 1x, ./images/business-1@2x.jpg 2x" 
+                    src="./images/business.jpg"  alt="Growing Business">
                     <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
