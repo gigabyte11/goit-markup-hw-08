@@ -362,8 +362,6 @@ img {
   .tel__link {
     display: flex;
     align-items: center;
-    margin-left: 84px;
-    padding-right: 15px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -578,17 +576,17 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .section-hero {
     width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
   .section-hero {
     width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1200.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-desktop1x.jpg");
   }
 }
 
