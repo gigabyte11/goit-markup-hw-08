@@ -17,7 +17,6 @@
 }
 
 .features-menu{
-
     @media screen and (min-width: 768px)  {
         //flex-basis: calc(100% / 2 - 30px);
         display: flex;
@@ -40,8 +39,10 @@
     margin-bottom: 30px;
     
     @media screen and (min-width: 480px)  {
+
         max-width: 480px;
-    
+        justify-content: center;
+    }
     @media screen and (min-width: 768px)  {
         flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
@@ -99,4 +100,3 @@
 .hero-list-item:last-child{
     margin-bottom: 0px;    
 }
-
