@@ -52,21 +52,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
-    margin-left: auto;
-    margin-left: auto;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -283,24 +281,14 @@ img {
   }
 }
 
-.list__adress {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .list__adress {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    /*прибирає точки в списку*/
-    margin-right: auto;
-    transition: color 250ms linear;
+@media screen and (min-width: 767px) {
+  .list__adress:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list__adress {
-    display: block;
     list-style: none;
     /*прибирає точки в списку*/
     margin-right: auto;
@@ -316,7 +304,6 @@ img {
   .mail__link {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -582,9 +569,10 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) {
   .section-hero {
-    width: 100%;
+    max-width: 1600;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-desktop1x.jpg");
   }
 }
@@ -676,7 +664,6 @@ img {
 
 .features-container {
   align-items: center;
-  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -695,13 +682,12 @@ img {
   }
 }
 
-.list-features:last-child {
-  margin-bottom: 0px;
+.list-features:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .list-features {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -888,7 +874,6 @@ img {
 @media screen and (min-width: 480px) {
   .team-list {
     max-width: 480px;
-    margin: auto;
   }
 }
 
