@@ -21,6 +21,7 @@
 }
 
 .adres-footer{
+    margin-bottom: 60px;
     @media screen and (max-width: 1199px) {
         display: flex;
         flex-direction: column;
@@ -63,7 +64,7 @@
 .adress-list
 {
     padding-top:  20px;
-    padding-bottom: 60px;
+   // padding-bottom: 60px;
     @media screen and (min-width: 1200px) {
       //  margin-bottom: 9px;
       margin-right: auto;
