@@ -1809,7 +1809,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio-list-content:nth-child(2n + 1) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
 }
 
