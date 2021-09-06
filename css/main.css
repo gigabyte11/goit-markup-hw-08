@@ -299,6 +299,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .list__adress {
+    display: block;
     list-style: none;
     /*прибирає точки в списку*/
     margin-right: auto;

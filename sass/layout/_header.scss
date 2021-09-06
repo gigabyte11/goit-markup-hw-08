@@ -205,20 +205,15 @@
         transition: color 250ms linear;
     }
     @media screen and (min-width: 1200px) {
-       // display: block;
-       // display: flex;
+        display: block;
+      //  display: flex;
         list-style: none; /*прибирає точки в списку*/
         margin-right: auto;
         transition: color 250ms linear;
     }
-
 }
 .mail__link{
     display: none;
-    &:hover,
-    &:focus{
-        color: var(--color-text);
-    }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -236,16 +231,33 @@
         color: var(--color-text-mail-tel);
         text-decoration: none;
         transition: color 250ms linear;
+
+            &:hover,
+            &:focus{
+            color: var(--color-text);
+            }
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-        //flex-direction: row;
+        flex-direction: row;
         align-items: center;
         margin-left: 305px;
     
+        font-family: Roboto; 
+        font-style: normal; 
+        font-weight: 500; 
         font-size: 14px; 
         line-height: 16px; 
-        
+        letter-spacing: 0.02em;
+        color: var(--color-text-mail-tel);
+        text-decoration: none;
+        transition: color 250ms linear;
+
+        &:hover,
+        &:focus{
+            color: var(--color-text);
+        }
+    }
 }
 .tel__link{
     display: none;
